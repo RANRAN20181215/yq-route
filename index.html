@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
-<head>
+<html lang="zh-CN"><head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>言蹊教育 · 一条 410 天让孩子英语听说自由的路线</title>
@@ -168,12 +167,14 @@ td.t{font-family:"Times New Roman",serif;font-weight:700;font-size:16px;color:va
 
 /* ---------- 成果 / 视频位 ---------- */
 .showcase{padding:52px 0;background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin-top:10px}
-.showcase-in{display:grid;grid-template-columns:1.12fr 1fr;gap:30px;align-items:center}
-.vid{position:relative;border-radius:14px;overflow:hidden;aspect-ratio:16/9;
+.showcase-in{display:grid;grid-template-columns:0.9fr 1.1fr;gap:34px;align-items:center}
+.vid{position:relative;border-radius:14px;overflow:hidden;aspect-ratio:9/16;
+  width:100%;max-width:360px;margin:0 auto;
   background:radial-gradient(120% 120% at 20% 15%, #3A3A2C 0%, #22221A 45%, #141410 100%);
   box-shadow:0 10px 28px rgba(0,0,0,.14)}
 .vid video{width:100%;height:100%;object-fit:contain;display:none;background:#17170F}
 .vid.has-video video{display:block}
+.vid.has-video .vid-empty{display:none}
 .vid-empty{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;
   align-items:center;text-align:center;padding:22px;gap:9px;color:#8E8E84}
 .vid-empty .play{width:66px;height:66px;border-radius:50%;border:2px solid rgba(255,255,255,.28);
@@ -281,15 +282,9 @@ body.editing [contenteditable="true"]:focus{background:#FFF0C2;box-shadow:inset 
 }
 </style>
 </head>
-<body>
+<body class="">
 
-<div class="editbar" id="editbar">
-  <span class="hint">编辑模式：直接点文字修改，<b>只改字，不要删整块</b>。改完点保存，浏览器会下载一个新的 index.html。</span>
-  <span class="btns">
-    <button class="pri" id="btnSave">保存</button>
-    <button id="btnExit">退出</button>
-  </span>
-</div>
+
 
 <header class="hero">
   <div class="wrap">
@@ -299,9 +294,9 @@ body.editing [contenteditable="true"]:focus{background:#FFF0C2;box-shadow:inset 
     <p class="sub">适合 <strong>5–9 岁</strong> 的孩子。遵循婴儿学母语的规律：先大量听，听懂了再开口，最后才认字。不背单词、不做题、不要求朗读。</p>
     <div class="stats">
       <div><b class="num">11</b><span>个级别 AA → J</span></div>
-      <div><b class="num">410</b><span>天 每天固定听</span></div>
-      <div><b class="num">3000</b><span>词 听懂之后才开始认字</span></div>
-      <div><b class="num">30</b><span>分钟 每天看视频</span></div>
+      <div><b class="num">410</b><span>天 每天都得看和听</span></div>
+      <div><b class="num">3000</b><span>词 学完我们课程孩子听力词汇基本能达到</span></div>
+      <div><b class="num">30</b><span>分钟 每天看视频 听音频60分钟</span></div>
     </div>
   </div>
 </header>
@@ -311,12 +306,12 @@ body.editing [contenteditable="true"]:focus{background:#FFF0C2;box-shadow:inset 
   <!-- 课程优势 -->
   <section class="adv">
     <div class="sec-head"><div class="sec-no" style="background:#2B2B2B">★</div><h2>课程优势</h2></div>
-    <p class="lead">同样一条路，我们把“家长最难坚持的部分”提前做掉了。</p>
+    <p class="lead">英文启蒙这条路，我们把“家长最难坚持的部分”提前做掉了。</p>
     <div class="logic">
-      <div class="lc"><span class="k">1</span><h3>路线是完整的</h3><p>410 天、11 个级别，每一天的内容都做好了。不是给你一张书单，让你自己摸着走。</p></div>
+      <div class="lc"><span class="k">1</span><h3>路线是完整的</h3><p>410 天、11 个级别，每一天的内容都做好了。你只需要带着孩子、按照要求看一遍视频或者分级听两遍音频。</p></div>
       <div class="lc"><span class="k">2</span><h3>不费妈、不费爸，也不费钱</h3><p>打开就放，看完自己关——不用陪读（低级别建议陪看）、不用讲解、不用检查作业、不用背单词。内容一次给全，不用再报班、不用一摞一摞买课。<strong>家长只要做到两件事</strong>：监督孩子学，保持环境安静，别在旁边说中文。</p></div>
       <div class="lc"><span class="k">3</span><h3>孩子不抵触</h3><p>不背单词、不讲语法、不做题、不要求朗读。起步阶段只有看动画和听音频。几乎是无痛学习，潜移默化中养成习惯。</p></div>
-      <div class="lc"><span class="k">4</span><h3>看和听是同一份</h3><p>看过的动画原声就是磨耳朵的音频。不用另找材料，也不会“看的和听的对不上”。</p></div>
+      <div class="lc"><span class="k">4</span><h3>看和听是同一份内容</h3><p>看过的动画原声就是磨耳朵的音频。不用另找材料，也不会“看的和听的对不上”。</p></div>
       <div class="lc"><span class="k">5</span><h3>升级标准清楚</h3><p>一个级别真的听懂了再上下一级，不追天数。既不原地踏步，也不硬拔。</p></div>
       <div class="lc"><span class="k">6</span><h3>理解孩子的沉默期</h3><p>大部分孩子半年到一年不开口是正常的，大约 6 个月能看出明显变化。理解这一点，家长们才不会半路放弃。</p></div>
     </div>
@@ -327,7 +322,7 @@ body.editing [contenteditable="true"]:focus{background:#FFF0C2;box-shadow:inset 
     <div class="sec-head"><div class="sec-no c1">1</div><h2>理论支撑</h2></div>
     <p class="lead">这套路线不是拍脑袋定的，是严格按照<strong>类母语路线</strong>——像孩子学母语一样，先大量听，把声音和画面直接对上，最后才认字的理论来安排学习内容。理论基础来自二语习得研究（克拉申的几个假说），下面四条是地基。</p>
     <ul class="thesis">
-      <li><b>1</b><span><strong>习得假说：是“习得”，不是“学习”。</strong>家长们刚开始都会奇怪，为什么我们课程不从 ABC 讲起，直接给孩子看整句的动画。其实现在教材也不是从字母讲起，因为从字母—单词—句子—语法这样的学习不符合语言习得的规律。字词句学习的英语虽然学了很多单词语法，但是开口交流就会发现，在大脑中组装句子要考虑形态和语法等等，句子好不容易组装好已经错过聊天的时机，所以几乎都是哑巴英语。只有在真实场景里反复听、反复遇见，才真正变成自己的，才能脱口而出。</span></li>
+      <li><b>1</b><span><strong>习得假说：是“习得”，不是“学习”。</strong>家长们刚开始都会奇怪，为什么我们课程不从 ABC 教起，直接给孩子看整句的动画。其实现在教材也不是从字母讲起，因为字母—单词—句子—语法这样的学习顺序不符合语言习得的规律。字词句顺序学习的英语虽然学了很多单词语法，但是开口交流就会发现，在大脑中组装句子要考虑形态和语法等等，句子好不容易组装好已经错过聊天的时机，所以几乎都是哑巴英语。只有在真实场景里反复听、反复遇见，才真正变成自己的，才能脱口而出。</span></li>
       <li><b>2</b><span><strong>沉默期：半年到一年。</strong>听得懂但不开口，是正常的阶段，不是没效果。不少家长就是在这段路上放弃的。</span></li>
       <li><b>3</b><span><strong>可理解输入：只难一点点。</strong>材料比现有水平高一点（i+1），看不懂的地方靠画面帮忙。我们通过给孩子的动画和分级难度一点点螺旋上升，带着孩子不知不觉爬楼梯。</span></li>
       <li><b>4</b><span><strong>情感过滤：放松了才听得进。</strong>我们不考、不纠错、不逼着说。研究表明，紧张状态下的输入会被挡在孩子大脑外，只有轻松的环境孩子才能学得好。</span></li>
@@ -339,7 +334,7 @@ body.editing [contenteditable="true"]:focus{background:#FFF0C2;box-shadow:inset 
     <div class="wrap">
       <div class="showcase-in">
         <div class="vid" id="vidWrap">
-          <video id="storyVideo" controls playsinline preload="metadata" poster="story-poster.jpg">
+          <video id="storyVideo" controls="" playsinline="" preload="metadata" poster="story-poster.jpg">
             <source src="story.mp4" type="video/mp4">
           </video>
           <div class="vid-empty">
@@ -349,14 +344,14 @@ body.editing [contenteditable="true"]:focus{background:#FFF0C2;box-shadow:inset 
         </div>
         <div class="showcase-text">
           <div class="k">学员案例</div>
-          <h2>6 岁零基础入门，18 个月走到中高章书</h2>
-          <p>这是按我们方法走通的学员之一：男孩、未满 8 岁、现读二年级，6 岁左右零基础开始。18 个月后的如今：</p>
+          <h2>6 岁零基础入门，19 个月后听力中高章</h2>
+          <p>这是按我们方法走通的学员之一：男孩、未满 8 岁、现读二年级，6 岁左右零基础开始。19个月后的如今：</p>
           <ul>
             <li>能裸听中高章书</li>
             <li>认读顺利推进到 RAZ G</li>
             <li>外教课能跟外教无障碍沟通</li>
           </ul>
-          <p class="vid-note">下面这段是他帮忙录的复述——讲的是他最爱的动画《布鲁伊》其中的一集，口音被 AI 识别为澳洲口音。</p>
+          <p class="vid-note">下面这段是他帮忙录的复述（3 分钟节选）——讲的是他最爱的动画《布鲁伊》其中的一集，口音被 AI 识别为澳洲口音。</p>
         </div>
       </div>
     </div>
@@ -413,7 +408,7 @@ body.editing [contenteditable="true"]:focus{background:#FFF0C2;box-shadow:inset 
           <p>才开始学<strong>自然拼读</strong>，从最简单的 A 级别开始自主阅读。这时候的“认字”，是把早就会的声音对应到字形，不是从零硬记。在此之前，不要求朗读。</p>
         </div>
       </div>
-      <div class="note"><i>●</i><span>看的部分有上限——为了保护眼睛、节约时间，不需要额外多给孩子看视频；<strong>熏听不设上限，越多越好</strong>。</span></div>
+      <div class="note"><i><br></i></div>
     </div>
   </section>
 
@@ -460,7 +455,7 @@ body.editing [contenteditable="true"]:focus{background:#FFF0C2;box-shadow:inset 
   <section>
     <div class="sec-head"><div class="sec-no c1">5</div><h2>常被问到的几件事</h2></div>
     <div class="faq">
-      <details open><summary>要不要背单词、默写？</summary><p>不需要。起步阶段不要求每个词都懂，抓住关键词就够——同一个词会在不同的片子里重复出现几十次，孩子自己会串起来。等到阅读阶段需要拼写时再单独处理。</p></details>
+      <details><summary>要不要背单词、默写？</summary><p>不需要。起步阶段不要求每个词都懂，抓住关键词就够——同一个词会在不同的片子里重复出现几十次，孩子自己会串起来。等到阅读阶段需要拼写时再单独处理。</p></details>
       <details><summary>多久能看到效果？</summary><p>大约 6 个月会有明显变化。但前面有半年到一年的沉默期：听得懂、不一定开口，这都是正常的。别在这段时间停下来。</p></details>
       <details><summary>要不要早点上外教？</summary><p>能听懂简单动画之后再上，性价比最高。听都听不懂的时候上外教，大部分时间花在猜。</p></details>
       <details><summary>几岁开始？</summary><p>5–9 岁是语言敏感期，越早开始越省力。但真正的分水岭不是年龄，是“每天有没有那 30 分钟”。五岁开始坚持一年，胜过三岁开始断断续续三年。</p></details>
@@ -484,6 +479,14 @@ addEventListener('beforeprint', function () {
 (function () {
   var on = /[?&]edit=1/.test(location.search);
   var bar = document.getElementById('editbar');
+  if (!bar) {
+    bar = document.createElement('div');
+    bar.className = 'editbar';
+    bar.id = 'editbar';
+    bar.innerHTML = '<span class="hint">编辑模式：直接点文字修改，<b>只改字，不要删整块</b>。改完点保存，浏览器会下载一个新文件。</span>' +
+      '<span class="btns"><button class="pri" id="btnSave">保存</button><button id="btnExit">退出</button></span>';
+    document.body.insertBefore(bar, document.body.firstChild);
+  }
   var zones = [document.querySelector('header'), document.querySelector('main'), document.querySelector('footer')];
   function setEditable(v) {
     zones.forEach(function (z) {
@@ -520,7 +523,7 @@ addEventListener('beforeprint', function () {
     a.click();
     a.remove();
     setTimeout(function () { URL.revokeObjectURL(a.href); }, 3000);
-    alert('已下载到「下载」文件夹。注意：保存只是下载文件，不会自动生效。请用它替换原来的 index.html 才会生效。');
+    alert('已下载到「下载」文件夹。注意：保存只是下载文件，不会自动生效。请把它移动到 D:\\OB\\ranran\\英语路线介绍\\ 并改名为 index.html 覆盖原文件。');
   });
 })();
 
@@ -534,5 +537,6 @@ addEventListener('beforeprint', function () {
 })();
 </script>
 
-</body>
-</html>
+
+
+</body></html>
