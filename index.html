@@ -172,9 +172,8 @@ td.t{font-family:"Times New Roman",serif;font-weight:700;font-size:16px;color:va
   width:100%;max-width:360px;margin:0 auto;
   background:radial-gradient(120% 120% at 20% 15%, #3A3A2C 0%, #22221A 45%, #141410 100%);
   box-shadow:0 10px 28px rgba(0,0,0,.14)}
-.vid video{width:100%;height:100%;object-fit:contain;display:none;background:#17170F}
-.vid.has-video video{display:block}
-.vid.has-video .vid-empty{display:none}
+.vid video{width:100%;height:100%;object-fit:contain;display:block;background:#17170F}
+
 .vid-empty{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;
   align-items:center;text-align:center;padding:22px;gap:9px;color:#8E8E84}
 .vid-empty .play{width:66px;height:66px;border-radius:50%;border:2px solid rgba(255,255,255,.28);
@@ -191,6 +190,8 @@ td.t{font-family:"Times New Roman",serif;font-weight:700;font-size:16px;color:va
 .showcase-text p{font-size:14.5px;color:#4A4A4A;line-height:1.85}
 .showcase-text ul{list-style:none;margin-top:14px}
 .showcase-text .vid-note{margin-top:14px;padding-top:12px;border-top:1px solid var(--line);font-size:12.5px;color:#8A8A80;line-height:1.7}
+.showcase-text .vid-fallback{margin-top:8px;font-size:12.5px}
+.showcase-text .vid-fallback a{color:var(--blue);text-decoration:none;border-bottom:1px solid rgba(72,116,203,.35)}
 .showcase-text li{font-size:13.5px;color:#666;padding:5px 0 5px 20px;position:relative;line-height:1.7}
 .showcase-text li::before{content:"";position:absolute;left:2px;top:13px;width:6px;height:6px;
   border-radius:50%;background:var(--green)}
@@ -334,13 +335,8 @@ body.editing [contenteditable="true"]:focus{background:#FFF0C2;box-shadow:inset 
     <div class="wrap">
       <div class="showcase-in">
         <div class="vid" id="vidWrap">
-          <video id="storyVideo" controls="" playsinline="" preload="metadata" poster="story-poster.jpg">
-            <source src="story.mp4" type="video/mp4">
-          </video>
-          <div class="vid-empty">
-            <span class="play"></span>
-            <span class="vt">学员复述 · Bluey 片段</span>
-          </div>
+          <video id="storyVideo" src="story.mp4" controls playsinline webkit-playsinline x5-playsinline x5-video-player-type="h5" preload="metadata" poster="story-poster.jpg"></video>
+          
         </div>
         <div class="showcase-text">
           <div class="k">学员案例</div>
@@ -352,6 +348,7 @@ body.editing [contenteditable="true"]:focus{background:#FFF0C2;box-shadow:inset 
             <li>外教课能跟外教无障碍沟通</li>
           </ul>
           <p class="vid-note">下面这段是他帮忙录的复述（3 分钟节选）——讲的是他最爱的动画《布鲁伊》其中的一集，口音被 AI 识别为澳洲口音。</p>
+          <p class="vid-fallback"><a href="story.mp4" target="_blank" rel="noopener">微信里点不动？点这里直接打开视频</a></p>
         </div>
       </div>
     </div>
